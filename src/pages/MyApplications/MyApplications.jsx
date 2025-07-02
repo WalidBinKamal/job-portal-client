@@ -6,7 +6,7 @@ const MyApplications = () => {
     const [jobs, setJobs] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/job-applications?email=${user.email}`)
+        fetch(`http://localhost:5000/job-application?email=${user.email}`)
             .then(res => res.json())
             .then(data => {
                 setJobs(data)
@@ -62,7 +62,7 @@ const MyApplications = () => {
                                 </td>
                                 <td>Purple</td>
                                 <th>
-                                    <button className="btn btn-ghost btn-xs">details</button>
+                                    <button className="btn btn-ghost btn-xs">X</button>
                                 </th>
                             </tr>)
                         }
