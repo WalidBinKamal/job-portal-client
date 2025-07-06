@@ -23,7 +23,7 @@ const ViewApplications = () => {
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
-                        title: "Your job has been added",
+                        title: "Your job has been updated",
                         showConfirmButton: false,
                         timer: 1500
                     });
